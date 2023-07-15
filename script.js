@@ -18,3 +18,25 @@ function toggleMode(){
 
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const prevButton = document.querySelector(".carousel-button.prev");
+    const nextButton = document.querySelector(".carousel-button.next");
+    const panels = document.querySelectorAll(".carousel-panel");
+    let currentPanelIndex = 0;
+  
+    prevButton.addEventListener("click", function() {
+      showPanel(currentPanelIndex - 1);
+    });
+  
+    nextButton.addEventListener("click", function() {
+      showPanel(currentPanelIndex + 1);
+    });
+  
+    function showPanel(index) {
+      panels[currentPanelIndex].classList.remove("active");
+      currentPanelIndex = (index + panels.length) % panels.length;
+      panels[currentPanelIndex].classList.add("active");
+    }
+  });
+  
