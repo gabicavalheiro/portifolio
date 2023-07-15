@@ -163,13 +163,41 @@ header #switch{
   
   
   .carousel-panel {
-    background-color: #f1f1f1;
+    background-color: var(--highlight-color);
     border-radius: 10px;
     flex: 1;
-    height: 300px;
     display: none;
     text-align: center;
   }
+  .carousel-panel h2{
+    margin-top: 15px;
+  }
+  .carousel-panel p{
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .carousel-panel p button {
+    margin: auto;
+    padding: 10px 20px;
+    background: var(--highlight-color) no-repeat center;
+    border: 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    outline: none;
+  }
+  .carousel-panel p button a{
+    text-decoration: none;
+  }
+  
+  .carousel-panel button:hover {
+    text-decoration: none;
+  }
+  
+  
+  
   
   .carousel-panel.active {
     display: block;
