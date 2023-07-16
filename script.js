@@ -39,4 +39,31 @@ document.addEventListener("DOMContentLoaded", function() {
       panels[currentPanelIndex].classList.add("active");
     }
   });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const typingElement = document.getElementById("typing-animation");
+    const text = "Front-end student";
+    let index = 0;
+  
+    function type() {
+      if (index < text.length) {
+        typingElement.textContent += text.charAt(index);
+        index++;
+        setTimeout(type, 100);
+      } else {
+        reset();
+      }
+    }
+  
+    function reset() {
+      setTimeout(function() {
+        typingElement.textContent = "";
+        index = 0;
+        type();
+      }, 2000);
+    }
+  
+    type();
+  });
+  
   
