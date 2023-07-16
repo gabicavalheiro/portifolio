@@ -155,16 +155,83 @@ header #switch{
 
   .about-me{
     text-align: center;
+    background-color: var(--highlight-color);
+    padding: 70px;
+    
   }
   .about-me p{
     margin: 30px;
+    
   }
   
+
+
+  /*skills*/
+.container{
+    display: flex;
+}
+
+.skills,
+.skills-back {
+  flex: 1;
+  margin: 0;
+  position: relative;
+}
+
+.skills::after,
+.skills-back::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  background-color: var(--highlight-color
+  );
+}
+
+  .skills-back h1{
+    text-align: center;
+    margin-top: 40px;
+  }
   
+
+  .skills h1{
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows:180px 60px;
+    justify-content: stretch;
+    margin-left: 40px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .item img {
+        margin-top: 50px;
+      }
+      
+      .item p {
+        margin-top: 10px;
+        margin-bottom: 100px;      }
+
 
 .projects{
     text-align: center;
-    margin-top: 60x;
+    margin-top: 100px;
+    
 }
 
 
@@ -222,6 +289,9 @@ header #switch{
   }
   .carousel-panel p button a{
     text-decoration: none;
+  }
+  .carousel-panel p button:hover{
+    outline: 8px solid var(--highlight-color);
   }
   
   .carousel-panel button:hover {
