@@ -327,3 +327,28 @@ header #switch{
 .carousel-panel.active {
   display: block;
 }
+
+
+
+@media (max-width: 600px) {
+  .carousel {
+    flex-direction: column;
+    
+  }
+
+  .carousel-button {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+
+  .carousel-panel {
+    margin-bottom: 30px;
+  }
+
+.carousel-panel.active {
+  max-width: 90%;
+  width: 300px;
+  margin-top: 30px;
+}}
