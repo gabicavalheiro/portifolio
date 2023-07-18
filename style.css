@@ -58,7 +58,17 @@ header a {
     font-size: 30px; 
    
 }
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px; /* Tamanho reduzido para telas menores */
+  }
+}
 
+@media (max-width: 400px) {
+  h1 {
+    font-size: 20px; /* Tamanho ainda menor para telas mais estreitas */
+  }
+}
 header #switch{
     position: absolute;
     width: 64px;
