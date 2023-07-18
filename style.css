@@ -262,9 +262,10 @@ header #switch{
 /*Carousel*/
 .carousel {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   margin-top: 30px;
-  
 }
 
 .carousel-button {
@@ -275,7 +276,6 @@ header #switch{
   width: 40px;
   height: 40px;
   font-size: 24px;
-  margin: 0 10px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -291,13 +291,16 @@ header #switch{
   text-align: center;
   margin-bottom: 70px;
 }
-.carousel-panel h2{
+
+.carousel-panel h2 {
   margin-top: 15px;
 }
-.carousel-panel p{
+
+.carousel-panel p {
   margin-bottom: 20px;
   margin-top: 10px;
 }
+
 .carousel-panel p button {
   margin: auto;
   padding: 10px 20px;
@@ -310,10 +313,12 @@ header #switch{
   text-align: center;
   outline: none;
 }
-.carousel-panel p button a{
+
+.carousel-panel p button a {
   text-decoration: none;
 }
-.carousel-panel p button:hover{
+
+.carousel-panel p button:hover {
   outline: 8px solid var(--highlight-color);
 }
 
@@ -321,9 +326,30 @@ header #switch{
   text-decoration: none;
 }
 
-
-
-
 .carousel-panel.active {
   display: block;
+  margin-bottom: 30px;
+  width: 80%;
+  max-width: 400px;
+  margin-left: 40px;
+}
+
+@media (max-width: 600px) {
+  .carousel {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .carousel-button {
+    margin-top: 10px;
+  }
+
+  .carousel-panel {
+    margin-bottom: 30px;
+  }
+  .carousel-panel.active {
+    width: 90%;
+    max-width: 300px;
+  }
+  
 }
