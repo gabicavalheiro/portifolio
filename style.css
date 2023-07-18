@@ -1,184 +1,184 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 :root {
-    --text-color: white;
-    --bg-url: url(./assets/assets/bg-mobile.jpg); 
-    --strok-color: rgba(255, 255, 255, 0.5);
-    --surface-color: rgba(255, 255, 255, 0.055);
-    --surface-color-hover: rgba(0, 0, 0, 0.02);
-    --highlight-color: rgba(255, 255, 255, 0.2);
-    --switch-bg-url: url(./assets/moon-stars.svg);
-    
+  --text-color: white;
+  --bg-url: url(./assets/assets/bg-mobile.jpg); 
+  --strok-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.055);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./assets/moon-stars.svg);
+  
 }
 
 .light{
-    --text-color:  black;
-    --bg-url: url(./assets/assets/bg-mobile-light.jpg);
-    --strok-color: rgba(0, 0, 0, 0.5);
-    --surface-color: rgba(0, 0, 0, 0.05 );
-    --surface-color-hover: rgba(0, 0, 0, 0.05 );
-    --highlight-color: rgba(0, 0, 0, 0.10);
-    --switch-bg-url: url(./assets/sun-stars.svg);
+  --text-color:  black;
+  --bg-url: url(./assets/assets/bg-mobile-light.jpg);
+  --strok-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05 );
+  --surface-color-hover: rgba(0, 0, 0, 0.05 );
+  --highlight-color: rgba(0, 0, 0, 0.10);
+  --switch-bg-url: url(./assets/sun-stars.svg);
 }
 body {
-    background: var(--bg-url) no-repeat top center/cover;
-    
+  background: var(--bg-url) no-repeat top center/cover;
+  
 }
 
 body *{
-    font-family: 'Inter', sans-serif;
-    color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
 }
 
 header{
-    background-color: var(--surface-color);
-    color: var(--text-color);
-    padding: 20px;
-    backdrop-filter: blur(4px);
-    position: relative;
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  padding: 20px;
+  backdrop-filter: blur(4px);
+  position: relative;
 
 }
 
 
 header a {
-    border: none;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    z-index: 1;
-    transform: translateY(-50%);  
-    margin-right: 100px;
+  border: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 1;
+  transform: translateY(-50%);  
+  margin-right: 100px;
 }
 
 
 .icon {
-    font-size: 30px; 
-   
+  font-size: 30px; 
+ 
 }
 @media (max-width: 600px) {
-  h1 {
-    font-size: 24px; /* Tamanho reduzido para telas menores */
-  }
+h1 {
+  font-size: 24px; /* Tamanho reduzido para telas menores */
+}
 }
 
 @media (max-width: 400px) {
-  h1 {
-    font-size: 20px; /* Tamanho ainda menor para telas mais estreitas */
-  }
+h1 {
+  font-size: 20px; /* Tamanho ainda menor para telas mais estreitas */
+}
 }
 header #switch{
-    position: absolute;
-    width: 64px;
-    top: 45%;
-    right: 0;
-    z-index: 1;
-    transform: translateY(-50%);  
-    margin-right: 20px;
-    
+  position: absolute;
+  width: 64px;
+  top: 45%;
+  right: 0;
+  z-index: 1;
+  transform: translateY(-50%);  
+  margin-right: 20px;
+  
 }
 
 #switch button{
-    width: 32px;
-    height: 32px;
-    background: white var(--switch-bg-url) no-repeat center;
-    border: 0;
-    border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
 
-    position: absolute;
-    top: 50%;
-    left: 0;
-    z-index: 1;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
 
-    animation: slide-back 0.2s;;
-    
+  animation: slide-back 0.2s;;
+  
 }
 
 .light #switch button{
-    animation: slide-in 0.2s forwards;
+  animation: slide-in 0.2s forwards;
 
 }
 
 #switch button:hover{
-    outline: 8px solid var(--highlight-color);
+  outline: 8px solid var(--highlight-color);
 }
 
 /*span é inline*/
 #switch span{
-    display: block;
-    width: 64px;
-    height: 24px;
-    background: var(--surface-color);
-    border: 1px solid var(--strok-color);
-    backdrop-filter: blur(4px);
-    border-radius: 9999px;
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--strok-color);
+  backdrop-filter: blur(4px);
+  border-radius: 9999px;
 }
 
 @media (min-width: 700px){
-    :root{
-        --bg-url: url(./assets/assets/bg-desktop.jpg);
-    }
+  :root{
+      --bg-url: url(./assets/assets/bg-desktop.jpg);
+  }
 
-    .light{
-        --bg-url: url(./assets/assets/bg-desktop-light.jpg)
-    }
+  .light{
+      --bg-url: url(./assets/assets/bg-desktop-light.jpg)
+  }
 
 }
 
 /*animations*/
 @keyframes slide-in {
-    from{
-        left: 0;
-    }
-    to{
-        left: 50%;
-    }
-    
+  from{
+      left: 0;
+  }
+  to{
+      left: 50%;
+  }
+  
 }
 @keyframes slide-back {
-    from{
-        left: 50%;
-    }
-    to{
-        left: 0;
-    }
-    
+  from{
+      left: 50%;
+  }
+  to{
+      left: 0;
+  }
+  
 }
 
 /*message*/
 .message {
-    text-align: center;
-    margin-top: 240px;
-    margin-bottom: 370px;
-  }
+  text-align: center;
+  margin-top: 240px;
+  margin-bottom: 370px;
+}
+
+.name {
+  color: rgb(188, 6, 188);
+}
+
+
+
+/*about-me*/
+
+.about-me{
+  text-align: center;
+  background-color: var(--highlight-color);
+  padding: 70px;
   
-  .name {
-    color: rgb(188, 6, 188);
-  }
+}
+.about-me p{
+  margin: 30px;
   
+}
 
 
-  /*about-me*/
 
-  .about-me{
-    text-align: center;
-    background-color: var(--highlight-color);
-    padding: 70px;
-    
-  }
-  .about-me p{
-    margin: 30px;
-    
-  }
-  
-
-
-  /*skills*/
-.container{
-    display: flex;
+/*skills*/
+.container {
+  display: flex;
 }
 
 .skills,
@@ -196,125 +196,134 @@ header #switch{
   right: 0;
   height: 100%;
   width: 1px;
-  background-color: var(--highlight-color
-  );
+  background-color: var(--highlight-color);
 }
 
-  .skills-back h1{
-    text-align: center;
-    margin-top: 40px;
+.skills-back h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.skills h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: 180px 60px;
+  justify-content: stretch;
+  margin-left: 40px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item img {
+  margin-top: 50px;
+}
+
+.item p {
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    margin-right: 10px;
   }
-  
 
-  .skills h1{
-    text-align: center;
-    margin-top: 40px;
+  .skills-back {
+    margin-top: 20px; /* Adicione um espaçamento superior para separar os elementos */
   }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 120px);
-    grid-template-rows:180px 60px;
-    justify-content: stretch;
-    margin-left: 40px;
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    }
-
-    .item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      
-      .item img {
-        margin-top: 50px;
-      }
-      
-      .item p {
-        margin-top: 10px;
-        margin-bottom: 100px;      }
-
+  .skills::after,
+  .skills-back::after {
+    display: none; /* Remova os pseudo-elementos quando o layout estiver responsivo */
+  }
+}
 
 .projects{
-    text-align: center;
-    margin-top: 100px;
-    
+  text-align: center;
+  margin-top: 100px;
+  
 }
 
 
 
 /*Carousel*/
 .carousel {
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-    
-  }
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
   
-  .carousel-button {
-    background-color: var(--highlight-color);
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 24px;
-    margin: 0 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  
-  .carousel-panel {
-    background-color: var(--highlight-color);
-    border-radius: 10px;
-    flex: 1;
-    display: none;
-    text-align: center;
-    margin-bottom: 70px;
-  }
-  .carousel-panel h2{
-    margin-top: 15px;
-  }
-  .carousel-panel p{
-    margin-bottom: 20px;
-    margin-top: 10px;
-  }
-  .carousel-panel p button {
-    margin: auto;
-    padding: 10px 20px;
-    background: var(--highlight-color) no-repeat center;
-    border: 0;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    outline: none;
-  }
-  .carousel-panel p button a{
-    text-decoration: none;
-  }
-  .carousel-panel p button:hover{
-    outline: 8px solid var(--highlight-color);
-  }
-  
-  .carousel-panel button:hover {
-    text-decoration: none;
-  }
-  
-  
-  
-  
-  .carousel-panel.active {
-    display: block;
-  }
-  
-  
+}
 
-  
+.carousel-button {
+  background-color: var(--highlight-color);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.carousel-panel {
+  background-color: var(--highlight-color);
+  border-radius: 10px;
+  flex: 1;
+  display: none;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.carousel-panel h2{
+  margin-top: 15px;
+}
+.carousel-panel p{
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.carousel-panel p button {
+  margin: auto;
+  padding: 10px 20px;
+  background: var(--highlight-color) no-repeat center;
+  border: 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  outline: none;
+}
+.carousel-panel p button a{
+  text-decoration: none;
+}
+.carousel-panel p button:hover{
+  outline: 8px solid var(--highlight-color);
+}
+
+.carousel-panel button:hover {
+  text-decoration: none;
+}
+
+
+
+
+.carousel-panel.active {
+  display: block;
+}
