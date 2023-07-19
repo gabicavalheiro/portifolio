@@ -153,6 +153,11 @@ header #switch{
   text-align: center;
   margin-top: 240px;
   margin-bottom: 370px;
+
+}
+
+.message h1{
+  font-size: 20px;
 }
 
 .name {
@@ -170,7 +175,7 @@ header #switch{
   
 }
 .about-me p{
-  margin: 30px;
+  margin-top: 30px;
   
 }
 
@@ -213,10 +218,8 @@ header #switch{
   display: grid;
   grid-template-columns: repeat(3, 120px);
   grid-template-rows: 180px 60px;
-  justify-content: stretch;
-  margin-left: 40px;
+  /* margin-left: 40px; */
   margin-top: 20px;
-  justify-content: center;
   align-items: center;
   text-align: center;
 }
