@@ -324,11 +324,12 @@ header #switch{
   text-decoration: none;
 }
 
-
-
-
 .carousel-panel.active {
   display: block;
+}
+
+.carousel-button.next{
+  margin-bottom: 40px;
 }
 
 
