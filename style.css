@@ -182,7 +182,7 @@ header #switch{
 
 
 /*skills*/
-.container {
+.containerr {
   display: flex;
 }
 
@@ -240,7 +240,7 @@ header #switch{
 }
 
 @media (max-width: 600px) {
-  .container {
+  .containerr {
     flex-direction: column;
     margin-right: 10px;
   }
