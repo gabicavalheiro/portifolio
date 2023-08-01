@@ -222,6 +222,7 @@ header #switch{
   margin-top: 20px;
   align-items: center;
   text-align: center;
+  margin-left: 170px;
 }
 
 .item {
@@ -356,3 +357,6 @@ header #switch{
   width: 300px;
   margin-top: 30px;
 }}
+
+
+
