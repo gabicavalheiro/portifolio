@@ -56,8 +56,14 @@ header a {
 
 .icon {
   font-size: 30px; 
- 
 }
+.icon:hover {
+  font-size: 30px; 
+  background-color: var(--highlight-color);
+  outline: 8px solid var(--highlight-color);
+  border-radius: 50%;
+}
+
 @media (max-width: 600px) {
 h1 {
   font-size: 24px; /* Tamanho reduzido para telas menores */
@@ -173,7 +179,7 @@ header #switch{
 
 .about-me{
   text-align: center;
-  background-color: var(--highlight-color);
+  background-color: var(--surface-color);
   padding: 70px;
   
 }
@@ -275,7 +281,7 @@ header #switch{
 }
 
 .carousel-button {
-  background-color: var(--highlight-color);
+  background-color: var(--surface-color);
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -291,7 +297,7 @@ header #switch{
 
 
 .carousel-panel {
-  background-color: var(--highlight-color);
+  background-color: var(--surface-color);
   border-radius: 10px;
   flex: 1;
   display: none;
@@ -326,6 +332,7 @@ header #switch{
 
 .carousel-panel button:hover {
   text-decoration: none;
+  outline: 8px solid var(--highlight-color);
 }
 
 .carousel-panel.active {
@@ -334,6 +341,14 @@ header #switch{
 
 .carousel-button.next{
   margin-bottom: 40px;
+}
+
+.carousel-button.next:hover{
+  margin-bottom: 40px;
+  outline: 8px solid var(--highlight-color);
+}
+.carousel-button.prev:hover{
+  outline: 8px solid var(--highlight-color);
 }
 
 
@@ -361,5 +376,54 @@ header #switch{
   margin-top: 30px;
 }}
 
+.image-container {
+  font-size: 0; /* Removendo espaçamento entre os elementos inline-block */
+}
 
+.itemm {
+  display: inline-block;
+  vertical-align: top; /* Alinhando as divs ao topo */
+  text-align: center; /* Centralizando o conteúdo horizontalmente */
+  margin-right: 10px; /* Espaçamento entre as imagens */
+}
+
+.itemm:last-child {
+  margin-right: 0; 
+}
+
+.itemm img {
+  margin: 10px; 
+}
+
+.button-container {
+  text-align: center; /* Centralizar os botões horizontalmente */
+  margin-bottom: 20px;
+  
+  
+}
+
+.button-container button {
+  display: inline-block; /* Alinhar os botões um ao lado do outro */
+  margin: 5px; /* Espaçamento entre os botões */
+  border: none; /* Remover a borda padrão dos botões */
+  background-color: var(--highlight-color); /* Cor de fundo dos botões */
+  padding: 10px 20px; /* Espaçamento interno dos botões */
+  border-radius: 5px;
+  
+}
+
+.button-container button a {
+  text-decoration: none; /* Remover sublinhado dos links */
+  color: var(--text-color);
+}
+
+.button-container button:hover{
+  outline: 8px solid var(--highlight-color);
+}
+
+
+footer{
+  background-color: var(--highlight-color);
+  height: 200px;
+}
 
