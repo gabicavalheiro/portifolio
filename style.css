@@ -157,12 +157,15 @@ header #switch{
 }
 
 .message h1{
-  font-size: 20px;
+  font-size: 40px;
 }
 
 .name {
   color: rgb(188, 6, 188);
+  font-size: 40px;
 }
+
+
 
 
 

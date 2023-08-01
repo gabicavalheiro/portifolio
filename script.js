@@ -43,7 +43,10 @@ document.addEventListener("DOMContentLoaded", function() {
   document.addEventListener("DOMContentLoaded", function() {
     const typingElement = document.getElementById("typing-animation");
     const text = "Front-end student";
+    const fontSize = "30px"; 
     let index = 0;
+  
+    typingElement.style.fontSize = fontSize; 
   
     function type() {
       if (index < text.length) {
@@ -65,5 +68,6 @@ document.addEventListener("DOMContentLoaded", function() {
   
     type();
   });
+  
   
   
