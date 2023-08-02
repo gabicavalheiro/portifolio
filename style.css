@@ -229,11 +229,12 @@ header #switch{
   grid-template-columns: repeat(3, 120px);
   grid-template-rows:180px 60px;
   justify-content: stretch;
-  margin-left: 40px;
+  margin-left: 10px;
   margin-top: 20px;
   justify-content: center;
   align-items: center;
   text-align: center;
+
   }
 
   .item {
