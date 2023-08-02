@@ -430,3 +430,10 @@ footer{
   height: 200px;
 }
 
+footer .contentt{
+  text-align: center;
+  padding-top: 20px;
+  font-size: 40px;
+  color: var(--text-color);
+}
+
