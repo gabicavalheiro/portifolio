@@ -425,15 +425,70 @@ header #switch{
 }
 
 
+/*formulario*/
+
+.formularioContato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formularioContato h1{
+  margin-bottom: 30px;
+}
+.formularioContato input{
+  background-color: transparent;
+  border: solid 1px var(--strok-color);
+  border-radius: 4px;
+  padding: 15px  100px;
+}
+
+.formularioContato textarea{
+  background-color: transparent;
+  border: solid 1px var(--strok-color);
+  border-radius: 4px;
+  padding: 15px  100px;
+}
+
+.formulario-input::placeholder{
+  color: var(--strok-color);
+}
+.formulario input[type="text"] {
+  font-size: 16px; 
+  text-align: left; 
+  padding-left: 15px;
+}
+.formulario input[type="email"] {
+  font-size: 16px; 
+  text-align: left; 
+  padding-left: 15px;
+  
+}
+.formulario #mensagem {
+  font-size: 16px; 
+  text-align: left; 
+  padding-left: 15px;
+  
+}
+
+.formularioContato  #botao-enviar {
+  background-color: var(--highlight-color);
+  border: none;
+  display: block;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+
 footer{
   background-color: var(--highlight-color);
-  height: 200px;
+  height: 150px;
 }
 
 footer .contentt{
   text-align: center;
-  padding-top: 20px;
-  font-size: 40px;
+  padding-top: 40px;
+  font-size: 30px;
   color: var(--text-color);
 }
 
