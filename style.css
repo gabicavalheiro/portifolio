@@ -478,6 +478,9 @@ header #switch{
   margin: auto;
   margin-bottom: 40px;
 }
+.formularioContato  #botao-enviar:hover {
+  outline: 8px solid var(--highlight-color);
+}
 
 
 footer{
