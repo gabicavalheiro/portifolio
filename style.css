@@ -471,14 +471,14 @@ header #switch{
   
 }
 
-.formularioContato  #botao-enviar {
+.formularioContato  .botao-enviar {
   background-color: var(--highlight-color);
   border: none;
   display: block;
   margin: auto;
   margin-bottom: 40px;
 }
-.formularioContato  #botao-enviar:hover {
+.formularioContato  .botao-enviar:hover {
   outline: 8px solid var(--highlight-color);
 }
 

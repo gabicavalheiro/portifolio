@@ -145,22 +145,39 @@
    
 
 
-    <div class="formularioContato">
+
+    <form id="contatoFormulario" action="https://formspree.io/f/xyyqezoe" method="POST">
+      <!-- ... seus campos de formulário ... -->
+      <label>
+        Your email:
+        <input type="email" name="email">
+      </label>
+      <label>
+        Your message:
+        <textarea name="message"></textarea>
+      </label>
+      <button type="submit">Send</button>
+  </form>
+  
+    <!-- <div class="formularioContato">
       <h1> Contato</h1>
 
-  <form class="formulario">
-    <label for="nome" ></label>
-    <input type="text" id="nome" name="nome" placeholder="Nome" required><br><br>
-
-    <label for="email"></label>
-    <input type="email" id="email" name="email"  placeholder="E-mail" required><br><br>
-
-    <label for="mensagem"></label><br>
-    <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Mensagem" required></textarea><br><br>
-
-    <input type="submit" value="Send" id="botao-enviar">
-</form>
-    </div>
+      <form
+      action="https://formspree.io/f/xyyqezoe"
+      method="POST"
+    >
+      <label>
+        Your email:
+        <input type="email" name="email">
+      </label>
+      <label>
+        Your message:
+        <textarea name="message"></textarea>
+      </label>
+       your other form fields go here -->
+      <!-- <button type="submit">Send</button>
+    </form>
+    </div> --> 
 
 
 

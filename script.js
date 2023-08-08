@@ -1,3 +1,6 @@
+const seleciona = (elemento) => document.querySelector(elemento)
+const selecionaTodos = (elemento) => document.querySelectorAll(elemento)
+
 function toggleMode(){
     const html = document.documentElement
     
@@ -69,23 +72,8 @@ document.addEventListener("DOMContentLoaded", function() {
     type();
   });
   
-  (function() {
-    emailjs.init("TWS9zD_av28wKr2Yy"); // Substitua "seu_user_id" pelo seu ID de usuário do EmailJS
-    document.getElementById("formulario-contato").onsubmit = function(event) {
-        event.preventDefault();
 
-        const formulario = event.target;
-        const data = new FormData(formulario);
-
-        emailjs.sendForm("service_f45d2f2", "template_wuueft5", data)
-            .then(function(response) {
-                console.log("E-mail enviado com sucesso!", response);
-                formulario.reset(); // Limpa o formulário após o envio
-                // Adicione aqui alguma mensagem de confirmação ou redirecionamento para uma página de agradecimento.
-            }, function(error) {
-                console.error("Erro ao enviar e-mail:", error);
-                // Adicione aqui alguma mensagem de erro ou tratamento de erro.
-            });
-    };
-})();
   
+
+
+
