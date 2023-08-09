@@ -492,4 +492,9 @@ footer .contentt{
   font-size: 30px;
   color: var(--text-color);
 }
+footer .contentt h1{
+  font-size: 10px;
+  font-weight: lighter;
+  margin-top: 30px;
+}
 
