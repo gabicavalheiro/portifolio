@@ -72,8 +72,21 @@ document.addEventListener("DOMContentLoaded", function() {
     type();
   });
   
-
   
+  document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("contatoFormulario");
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
 
+        // Envie o formulário usando XMLHttpRequest ou Fetch, se desejar
+        // ...
 
+        // Redirecione o usuário após o envio bem-sucedido
+        window.location.href = "icavalheiro.github.io/portifolio/";
+    });
+});
 
+  //TWS9zD_av28wKr2Yy
+//service_f45d2f2
+//template_wuueft5
+  
