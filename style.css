@@ -433,55 +433,53 @@ header #switch{
   justify-content: center;
   align-items: center;
 }
-.formularioContato h1{
+
+.formularioContato h1 {
   margin-bottom: 30px;
 }
-.formularioContato input{
+
+.formularioContato input {
   background-color: transparent;
   border: solid 1px var(--strok-color);
   border-radius: 4px;
-  padding: 15px  100px;
+  padding: 20px 100px;
+  margin-bottom: 20px;
 }
 
-.formularioContato textarea{
+.formularioContato textarea {
   background-color: transparent;
   border: solid 1px var(--strok-color);
   border-radius: 4px;
-  padding: 15px  100px;
+  padding: 30px 40px; /* Ajuste o padding vertical */
 }
 
-.formulario-input::placeholder{
+.formularioContato input::placeholder,
+.formularioContato textarea::placeholder {
   color: var(--strok-color);
-}
-.formulario input[type="text"] {
-  font-size: 16px; 
-  text-align: left; 
-  padding-left: 15px;
-}
-.formulario input[type="email"] {
-  font-size: 16px; 
-  text-align: left; 
-  padding-left: 15px;
-  
-}
-.formulario #mensagem {
-  font-size: 16px; 
-  text-align: left; 
-  padding-left: 15px;
-  
+  text-align: center; /* Centralize o texto do placeholder */
+  margin: 4px; /* Adicione a margem de 4px */
 }
 
-.formularioContato  .botao-enviar {
+
+.botao-enviar {
   background-color: var(--highlight-color);
+  color: var(--text-color);
   border: none;
+  border-radius: 5px;
   display: block;
   margin: auto;
   margin-bottom: 40px;
-}
-.formularioContato  .botao-enviar:hover {
-  outline: 8px solid var(--highlight-color);
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
+.botao-enviar:hover {
+  outline: 8px solid var(--highlight-color);
+
+}
 
 footer{
   background-color: var(--highlight-color);
